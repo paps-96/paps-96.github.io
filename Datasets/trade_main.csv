@@ -1,0 +1,14 @@
+Industry,Continuing to trade,Has permanently ceased trading,Has temporarily closed or temporarily paused trading
+Manufacturing,0.79,0.004,0.206
+"Water Supply, Sewerage, Waste Management And Remediation Activities",0.9,0.0,0.1
+Construction,0.732,0.007,0.261
+Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles,0.752,0.005,0.243
+Accommodation And Food Service Activities,0.182,0.012,0.806
+Transportation And Storage,0.915,0.0,0.085
+Information And Communication,0.95,0.005,0.045
+"Professional, Scientific And Technical Activities",0.967,0.003,0.03
+Administrative And Support Service Activities,0.915,0.004,0.081
+Education,0.868,0.006,0.126
+Human Health And Social Work Activities,0.938,0.014,0.049
+"Arts, Entertainment And Recreation",0.205,0.0,0.795
+All Industries,0.767,0.005,0.228
