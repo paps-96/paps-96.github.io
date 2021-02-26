@@ -1,5 +1,14 @@
 <html>
   <head>
+    <style>
+      .center {
+        margin: auto;
+        width: 60%;
+        border: 5px solid #FFFF00;
+        padding: 10px;
+        }
+      
+    </style>
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -29,8 +38,8 @@
 
         // Set chart options
         var options = {'title':'How Much Pizza I Ate Last Night',
-                       'width':400,
-                       'height':300};
+                       'width':4000,
+                       'height':3000};
 
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
@@ -41,6 +50,6 @@
 
   <body>
     <!--Div that will hold the pie chart-->
-    <div id="chart_div"></div>
+    <div id="chart_div" class="center"></div>
   </body>
 </html>
