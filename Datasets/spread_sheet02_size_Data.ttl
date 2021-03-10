@@ -1,0 +1,340 @@
+@prefix : <http://coursework_andreas.org/data/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix covid: <http://coursework_andreas.org/schema/covid-industry/> .
+
+:TP2020 rdf:type covid-industry:TimePeriod;
+	 dc:title "Data relate to the period 6 April 2020 to 19 April 2020" .
+
+:Manufacturing rdf:type covid-industry:IndustryType;
+	 dc:title "Manufacturing".
+
+:WaterSupplySewerageWasteManagementAndRemediationActivities rdf:type covid-industry:IndustryType;
+	 dc:title "Water Supply, Sewerage, Waste Management And Remediation Activities".
+
+:Construction rdf:type covid-industry:IndustryType;
+	 dc:title "Construction".
+
+:WholesaleAndRetailTradeRepairOfMotorVehiclesAndMotorcycles rdf:type covid-industry:IndustryType;
+	 dc:title "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles".
+
+:AccommodationAndFoodServiceActivities rdf:type covid-industry:IndustryType;
+	 dc:title "Accommodation And Food Service Activities".
+
+:TransportationAndStorage rdf:type covid-industry:IndustryType;
+	 dc:title "Transportation And Storage".
+
+:InformationAndCommunication rdf:type covid-industry:IndustryType;
+	 dc:title "Information And Communication".
+
+:ProfessionalScientificAndTechnicalActivities rdf:type covid-industry:IndustryType;
+	 dc:title "Professional, Scientific And Technical Activities".
+
+:AdministrativeAndSupportServiceActivities rdf:type covid-industry:IndustryType;
+	 dc:title "Administrative And Support Service Activities".
+
+:Education rdf:type covid-industry:IndustryType;
+	 dc:title "Education".
+
+:HumanHealthAndSocialWorkActivities rdf:type covid-industry:IndustryType;
+	 dc:title "Human Health And Social Work Activities".
+
+:ArtsEntertainmentAndRecreation rdf:type covid-industry:IndustryType;
+	 dc:title "Arts, Entertainment And Recreation".
+
+:AllIndustries rdf:type covid-industry:IndustryType;
+	 dc:title "All Industries".
+
+:NumberofResponsesWorkforceSizeLessThan250 rdf:type :WorkforceSize;
+	 dc:title "Number of Responses - Workforce Size Less Than 250".
+
+:NumberofResponsesWorkforceSize250Plus rdf:type :WorkforceSize;
+	 dc:title "Number of Responses - Workforce Size 250 Plus".
+
+:NumberofResponsesTotal rdf:type :WorkforceSize;
+	 dc:title "Number of Responses - Total".
+
+#Dataset
+:ds2 rdf:type qb:DataSet;
+	 dc:title "Responses to the BICS survey broken down by industry";
+	 rdfs:label "Responses to the BICS survey broken down by industry";
+	 rdfs:comment "Data relate to the period 6 April 2020 to 19 April 2020";
+	 . 
+
+:ds2_0_1 rdf:type qb:Observation; 
+	 rdf:value 648;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSizeLessThan250;
+	 qb:dimension :Manufacturing;
+	 qb:dimension :TP2020. 
+ 
+:ds2_0_2 rdf:type qb:Observation; 
+	 rdf:value 449;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSize250Plus;
+	 qb:dimension :Manufacturing;
+	 qb:dimension :TP2020. 
+ 
+:ds2_0_3 rdf:type qb:Observation; 
+	 rdf:value 1097;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesTotal;
+	 qb:dimension :Manufacturing;
+	 qb:dimension :TP2020. 
+ 
+:ds2_1_1 rdf:type qb:Observation; 
+	 rdf:value 50;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSizeLessThan250;
+	 qb:dimension :WaterSupplySewerageWasteManagementAndRemediationActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_1_2 rdf:type qb:Observation; 
+	 rdf:value 20;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSize250Plus;
+	 qb:dimension :WaterSupplySewerageWasteManagementAndRemediationActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_1_3 rdf:type qb:Observation; 
+	 rdf:value 70;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesTotal;
+	 qb:dimension :WaterSupplySewerageWasteManagementAndRemediationActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_2_1 rdf:type qb:Observation; 
+	 rdf:value 208;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSizeLessThan250;
+	 qb:dimension :Construction;
+	 qb:dimension :TP2020. 
+ 
+:ds2_2_2 rdf:type qb:Observation; 
+	 rdf:value 76;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSize250Plus;
+	 qb:dimension :Construction;
+	 qb:dimension :TP2020. 
+ 
+:ds2_2_3 rdf:type qb:Observation; 
+	 rdf:value 284;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesTotal;
+	 qb:dimension :Construction;
+	 qb:dimension :TP2020. 
+ 
+:ds2_3_1 rdf:type qb:Observation; 
+	 rdf:value 686;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSizeLessThan250;
+	 qb:dimension :WholesaleAndRetailTradeRepairOfMotorVehiclesAndMotorcycles;
+	 qb:dimension :TP2020. 
+ 
+:ds2_3_2 rdf:type qb:Observation; 
+	 rdf:value 344;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSize250Plus;
+	 qb:dimension :WholesaleAndRetailTradeRepairOfMotorVehiclesAndMotorcycles;
+	 qb:dimension :TP2020. 
+ 
+:ds2_3_3 rdf:type qb:Observation; 
+	 rdf:value 1030;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesTotal;
+	 qb:dimension :WholesaleAndRetailTradeRepairOfMotorVehiclesAndMotorcycles;
+	 qb:dimension :TP2020. 
+ 
+:ds2_4_1 rdf:type qb:Observation; 
+	 rdf:value 321;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSizeLessThan250;
+	 qb:dimension :AccommodationAndFoodServiceActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_4_2 rdf:type qb:Observation; 
+	 rdf:value 195;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSize250Plus;
+	 qb:dimension :AccommodationAndFoodServiceActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_4_3 rdf:type qb:Observation; 
+	 rdf:value 516;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesTotal;
+	 qb:dimension :AccommodationAndFoodServiceActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_5_1 rdf:type qb:Observation; 
+	 rdf:value 193;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSizeLessThan250;
+	 qb:dimension :TransportationAndStorage;
+	 qb:dimension :TP2020. 
+ 
+:ds2_5_2 rdf:type qb:Observation; 
+	 rdf:value 89;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSize250Plus;
+	 qb:dimension :TransportationAndStorage;
+	 qb:dimension :TP2020. 
+ 
+:ds2_5_3 rdf:type qb:Observation; 
+	 rdf:value 282;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesTotal;
+	 qb:dimension :TransportationAndStorage;
+	 qb:dimension :TP2020. 
+ 
+:ds2_6_1 rdf:type qb:Observation; 
+	 rdf:value 297;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSizeLessThan250;
+	 qb:dimension :InformationAndCommunication;
+	 qb:dimension :TP2020. 
+ 
+:ds2_6_2 rdf:type qb:Observation; 
+	 rdf:value 121;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSize250Plus;
+	 qb:dimension :InformationAndCommunication;
+	 qb:dimension :TP2020. 
+ 
+:ds2_6_3 rdf:type qb:Observation; 
+	 rdf:value 418;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesTotal;
+	 qb:dimension :InformationAndCommunication;
+	 qb:dimension :TP2020. 
+ 
+:ds2_7_1 rdf:type qb:Observation; 
+	 rdf:value 468;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSizeLessThan250;
+	 qb:dimension :ProfessionalScientificAndTechnicalActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_7_2 rdf:type qb:Observation; 
+	 rdf:value 265;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSize250Plus;
+	 qb:dimension :ProfessionalScientificAndTechnicalActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_7_3 rdf:type qb:Observation; 
+	 rdf:value 733;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesTotal;
+	 qb:dimension :ProfessionalScientificAndTechnicalActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_8_1 rdf:type qb:Observation; 
+	 rdf:value 453;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSizeLessThan250;
+	 qb:dimension :AdministrativeAndSupportServiceActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_8_2 rdf:type qb:Observation; 
+	 rdf:value 361;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSize250Plus;
+	 qb:dimension :AdministrativeAndSupportServiceActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_8_3 rdf:type qb:Observation; 
+	 rdf:value 814;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesTotal;
+	 qb:dimension :AdministrativeAndSupportServiceActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_9_1 rdf:type qb:Observation; 
+	 rdf:value 127;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSizeLessThan250;
+	 qb:dimension :Education;
+	 qb:dimension :TP2020. 
+ 
+:ds2_9_2 rdf:type qb:Observation; 
+	 rdf:value 191;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSize250Plus;
+	 qb:dimension :Education;
+	 qb:dimension :TP2020. 
+ 
+:ds2_9_3 rdf:type qb:Observation; 
+	 rdf:value 318;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesTotal;
+	 qb:dimension :Education;
+	 qb:dimension :TP2020. 
+ 
+:ds2_10_1 rdf:type qb:Observation; 
+	 rdf:value 85;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSizeLessThan250;
+	 qb:dimension :HumanHealthAndSocialWorkActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_10_2 rdf:type qb:Observation; 
+	 rdf:value 59;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSize250Plus;
+	 qb:dimension :HumanHealthAndSocialWorkActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_10_3 rdf:type qb:Observation; 
+	 rdf:value 144;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesTotal;
+	 qb:dimension :HumanHealthAndSocialWorkActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds2_11_1 rdf:type qb:Observation; 
+	 rdf:value 180;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSizeLessThan250;
+	 qb:dimension :ArtsEntertainmentAndRecreation;
+	 qb:dimension :TP2020. 
+ 
+:ds2_11_2 rdf:type qb:Observation; 
+	 rdf:value 98;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSize250Plus;
+	 qb:dimension :ArtsEntertainmentAndRecreation;
+	 qb:dimension :TP2020. 
+ 
+:ds2_11_3 rdf:type qb:Observation; 
+	 rdf:value 278;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesTotal;
+	 qb:dimension :ArtsEntertainmentAndRecreation;
+	 qb:dimension :TP2020. 
+ 
+:ds2_12_1 rdf:type qb:Observation; 
+	 rdf:value 3809;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSizeLessThan250;
+	 qb:dimension :AllIndustries;
+	 qb:dimension :TP2020. 
+ 
+:ds2_12_2 rdf:type qb:Observation; 
+	 rdf:value 2305;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesWorkforceSize250Plus;
+	 qb:dimension :AllIndustries;
+	 qb:dimension :TP2020. 
+ 
+:ds2_12_3 rdf:type qb:Observation; 
+	 rdf:value 6114;
+	 qb:dataSet :ds2;
+	 qb:dimension :NumberofResponsesTotal;
+	 qb:dimension :AllIndustries;
+	 qb:dimension :TP2020. 
+ 

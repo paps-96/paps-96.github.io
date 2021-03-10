@@ -1,0 +1,148 @@
+@prefix : <http://coursework_andreas.org/data/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix covid: <http://coursework_andreas.org/schema/covid-industry/> .
+
+:TP2020 rdf:type covid-industry:TimePeriod;
+	 dc:title "Data relate to the period 6 April 2020 to 19 April 2020" .
+
+:England rdf:type covid-industry:Country;
+	 dc:title "England".
+
+:Wales rdf:type covid-industry:Country;
+	 dc:title "Wales".
+
+:Scotland rdf:type covid-industry:Country;
+	 dc:title "Scotland".
+
+:NorthenIreland rdf:type covid-industry:Country;
+	 dc:title "Northen Ireland".
+
+:UK rdf:type covid-industry:Country;
+	 dc:title "UK".
+
+:Continuingtotrade rdf:type :TradingStatus;
+	 dc:title "Continuing to trade".
+
+:Haspermanentlyceasedtrading rdf:type :TradingStatus;
+	 dc:title "Has permanently ceased trading".
+
+:Hastemporarilyclosedortemporarilypausedtrading rdf:type :TradingStatus;
+	 dc:title "Has temporarily closed or temporarily paused trading".
+
+#Dataset
+:ds5 rdf:type qb:DataSet;
+	 dc:title "Percentage of all responding businesses on trading status, broken down by country";
+	 rdfs:label "Percentage of all responding businesses on trading status, broken down by country";
+	 rdfs:comment "Data relate to the period 6 April 2020 to 19 April 2020";
+	 . 
+
+:ds5_0_1 rdf:type qb:Observation; 
+	 rdf:value 0.778;
+	 qb:dataSet :ds5;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :England;
+	 qb:dimension :TP2020. 
+ 
+:ds5_0_2 rdf:type qb:Observation; 
+	 rdf:value 0.004;
+	 qb:dataSet :ds5;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :England;
+	 qb:dimension :TP2020. 
+ 
+:ds5_0_3 rdf:type qb:Observation; 
+	 rdf:value 0.218;
+	 qb:dataSet :ds5;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :England;
+	 qb:dimension :TP2020. 
+ 
+:ds5_1_1 rdf:type qb:Observation; 
+	 rdf:value 0.762;
+	 qb:dataSet :ds5;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :Wales;
+	 qb:dimension :TP2020. 
+ 
+:ds5_1_2 rdf:type qb:Observation; 
+	 rdf:value 0.011;
+	 qb:dataSet :ds5;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :Wales;
+	 qb:dimension :TP2020. 
+ 
+:ds5_1_3 rdf:type qb:Observation; 
+	 rdf:value 0.227;
+	 qb:dataSet :ds5;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :Wales;
+	 qb:dimension :TP2020. 
+ 
+:ds5_2_1 rdf:type qb:Observation; 
+	 rdf:value 0.776;
+	 qb:dataSet :ds5;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :Scotland;
+	 qb:dimension :TP2020. 
+ 
+:ds5_2_2 rdf:type qb:Observation; 
+	 rdf:value 0.007;
+	 qb:dataSet :ds5;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :Scotland;
+	 qb:dimension :TP2020. 
+ 
+:ds5_2_3 rdf:type qb:Observation; 
+	 rdf:value 0.217;
+	 qb:dataSet :ds5;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :Scotland;
+	 qb:dimension :TP2020. 
+ 
+:ds5_3_1 rdf:type qb:Observation; 
+	 rdf:value 0.728;
+	 qb:dataSet :ds5;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :NorthenIreland;
+	 qb:dimension :TP2020. 
+ 
+:ds5_3_2 rdf:type qb:Observation; 
+	 rdf:value 0.0;
+	 qb:dataSet :ds5;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :NorthenIreland;
+	 qb:dimension :TP2020. 
+ 
+:ds5_3_3 rdf:type qb:Observation; 
+	 rdf:value 0.272;
+	 qb:dataSet :ds5;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :NorthenIreland;
+	 qb:dimension :TP2020. 
+ 
+:ds5_4_1 rdf:type qb:Observation; 
+	 rdf:value 0.767;
+	 qb:dataSet :ds5;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :UK;
+	 qb:dimension :TP2020. 
+ 
+:ds5_4_2 rdf:type qb:Observation; 
+	 rdf:value 0.005;
+	 qb:dataSet :ds5;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :UK;
+	 qb:dimension :TP2020. 
+ 
+:ds5_4_3 rdf:type qb:Observation; 
+	 rdf:value 0.228;
+	 qb:dataSet :ds5;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :UK;
+	 qb:dimension :TP2020. 
+ 

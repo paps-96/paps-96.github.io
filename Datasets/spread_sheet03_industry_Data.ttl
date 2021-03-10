@@ -1,0 +1,340 @@
+@prefix : <http://coursework_andreas.org/data/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix covid: <http://coursework_andreas.org/schema/covid-industry/> .
+
+:TP2020 rdf:type covid-industry:TimePeriod;
+	 dc:title "Data relate to the period 6 April 2020 to 19 April 2020" .
+
+:Manufacturing rdf:type covid-industry:IndustryType;
+	 dc:title "Manufacturing".
+
+:WaterSupplySewerageWasteManagementAndRemediationActivities rdf:type covid-industry:IndustryType;
+	 dc:title "Water Supply, Sewerage, Waste Management And Remediation Activities".
+
+:Construction rdf:type covid-industry:IndustryType;
+	 dc:title "Construction".
+
+:WholesaleAndRetailTradeRepairOfMotorVehiclesAndMotorcycles rdf:type covid-industry:IndustryType;
+	 dc:title "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles".
+
+:AccommodationAndFoodServiceActivities rdf:type covid-industry:IndustryType;
+	 dc:title "Accommodation And Food Service Activities".
+
+:TransportationAndStorage rdf:type covid-industry:IndustryType;
+	 dc:title "Transportation And Storage".
+
+:InformationAndCommunication rdf:type covid-industry:IndustryType;
+	 dc:title "Information And Communication".
+
+:ProfessionalScientificAndTechnicalActivities rdf:type covid-industry:IndustryType;
+	 dc:title "Professional, Scientific And Technical Activities".
+
+:AdministrativeAndSupportServiceActivities rdf:type covid-industry:IndustryType;
+	 dc:title "Administrative And Support Service Activities".
+
+:Education rdf:type covid-industry:IndustryType;
+	 dc:title "Education".
+
+:HumanHealthAndSocialWorkActivities rdf:type covid-industry:IndustryType;
+	 dc:title "Human Health And Social Work Activities".
+
+:ArtsEntertainmentAndRecreation rdf:type covid-industry:IndustryType;
+	 dc:title "Arts, Entertainment And Recreation".
+
+:AllIndustries rdf:type covid-industry:IndustryType;
+	 dc:title "All Industries".
+
+:Continuingtotrade rdf:type :TradingStatus;
+	 dc:title "Continuing to trade".
+
+:Haspermanentlyceasedtrading rdf:type :TradingStatus;
+	 dc:title "Has permanently ceased trading".
+
+:Hastemporarilyclosedortemporarilypausedtrading rdf:type :TradingStatus;
+	 dc:title "Has temporarily closed or temporarily paused trading".
+
+#Dataset
+:ds4 rdf:type qb:DataSet;
+	 dc:title "Percentage of all responding businesses on trading status, broken down by industry";
+	 rdfs:label "Percentage of all responding businesses on trading status, broken down by industry";
+	 rdfs:comment "Data relate to the period 6 April 2020 to 19 April 2020";
+	 . 
+
+:ds4_0_1 rdf:type qb:Observation; 
+	 rdf:value 0.79;
+	 qb:dataSet :ds4;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :Manufacturing;
+	 qb:dimension :TP2020. 
+ 
+:ds4_0_2 rdf:type qb:Observation; 
+	 rdf:value 0.004;
+	 qb:dataSet :ds4;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :Manufacturing;
+	 qb:dimension :TP2020. 
+ 
+:ds4_0_3 rdf:type qb:Observation; 
+	 rdf:value 0.206;
+	 qb:dataSet :ds4;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :Manufacturing;
+	 qb:dimension :TP2020. 
+ 
+:ds4_1_1 rdf:type qb:Observation; 
+	 rdf:value 0.9;
+	 qb:dataSet :ds4;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :WaterSupplySewerageWasteManagementAndRemediationActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_1_2 rdf:type qb:Observation; 
+	 rdf:value 0.0;
+	 qb:dataSet :ds4;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :WaterSupplySewerageWasteManagementAndRemediationActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_1_3 rdf:type qb:Observation; 
+	 rdf:value 0.1;
+	 qb:dataSet :ds4;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :WaterSupplySewerageWasteManagementAndRemediationActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_2_1 rdf:type qb:Observation; 
+	 rdf:value 0.732;
+	 qb:dataSet :ds4;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :Construction;
+	 qb:dimension :TP2020. 
+ 
+:ds4_2_2 rdf:type qb:Observation; 
+	 rdf:value 0.007;
+	 qb:dataSet :ds4;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :Construction;
+	 qb:dimension :TP2020. 
+ 
+:ds4_2_3 rdf:type qb:Observation; 
+	 rdf:value 0.261;
+	 qb:dataSet :ds4;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :Construction;
+	 qb:dimension :TP2020. 
+ 
+:ds4_3_1 rdf:type qb:Observation; 
+	 rdf:value 0.752;
+	 qb:dataSet :ds4;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :WholesaleAndRetailTradeRepairOfMotorVehiclesAndMotorcycles;
+	 qb:dimension :TP2020. 
+ 
+:ds4_3_2 rdf:type qb:Observation; 
+	 rdf:value 0.005;
+	 qb:dataSet :ds4;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :WholesaleAndRetailTradeRepairOfMotorVehiclesAndMotorcycles;
+	 qb:dimension :TP2020. 
+ 
+:ds4_3_3 rdf:type qb:Observation; 
+	 rdf:value 0.243;
+	 qb:dataSet :ds4;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :WholesaleAndRetailTradeRepairOfMotorVehiclesAndMotorcycles;
+	 qb:dimension :TP2020. 
+ 
+:ds4_4_1 rdf:type qb:Observation; 
+	 rdf:value 0.182;
+	 qb:dataSet :ds4;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :AccommodationAndFoodServiceActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_4_2 rdf:type qb:Observation; 
+	 rdf:value 0.012;
+	 qb:dataSet :ds4;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :AccommodationAndFoodServiceActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_4_3 rdf:type qb:Observation; 
+	 rdf:value 0.806;
+	 qb:dataSet :ds4;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :AccommodationAndFoodServiceActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_5_1 rdf:type qb:Observation; 
+	 rdf:value 0.915;
+	 qb:dataSet :ds4;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :TransportationAndStorage;
+	 qb:dimension :TP2020. 
+ 
+:ds4_5_2 rdf:type qb:Observation; 
+	 rdf:value 0.0;
+	 qb:dataSet :ds4;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :TransportationAndStorage;
+	 qb:dimension :TP2020. 
+ 
+:ds4_5_3 rdf:type qb:Observation; 
+	 rdf:value 0.085;
+	 qb:dataSet :ds4;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :TransportationAndStorage;
+	 qb:dimension :TP2020. 
+ 
+:ds4_6_1 rdf:type qb:Observation; 
+	 rdf:value 0.95;
+	 qb:dataSet :ds4;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :InformationAndCommunication;
+	 qb:dimension :TP2020. 
+ 
+:ds4_6_2 rdf:type qb:Observation; 
+	 rdf:value 0.005;
+	 qb:dataSet :ds4;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :InformationAndCommunication;
+	 qb:dimension :TP2020. 
+ 
+:ds4_6_3 rdf:type qb:Observation; 
+	 rdf:value 0.045;
+	 qb:dataSet :ds4;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :InformationAndCommunication;
+	 qb:dimension :TP2020. 
+ 
+:ds4_7_1 rdf:type qb:Observation; 
+	 rdf:value 0.967;
+	 qb:dataSet :ds4;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :ProfessionalScientificAndTechnicalActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_7_2 rdf:type qb:Observation; 
+	 rdf:value 0.003;
+	 qb:dataSet :ds4;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :ProfessionalScientificAndTechnicalActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_7_3 rdf:type qb:Observation; 
+	 rdf:value 0.03;
+	 qb:dataSet :ds4;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :ProfessionalScientificAndTechnicalActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_8_1 rdf:type qb:Observation; 
+	 rdf:value 0.915;
+	 qb:dataSet :ds4;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :AdministrativeAndSupportServiceActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_8_2 rdf:type qb:Observation; 
+	 rdf:value 0.004;
+	 qb:dataSet :ds4;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :AdministrativeAndSupportServiceActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_8_3 rdf:type qb:Observation; 
+	 rdf:value 0.081;
+	 qb:dataSet :ds4;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :AdministrativeAndSupportServiceActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_9_1 rdf:type qb:Observation; 
+	 rdf:value 0.868;
+	 qb:dataSet :ds4;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :Education;
+	 qb:dimension :TP2020. 
+ 
+:ds4_9_2 rdf:type qb:Observation; 
+	 rdf:value 0.006;
+	 qb:dataSet :ds4;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :Education;
+	 qb:dimension :TP2020. 
+ 
+:ds4_9_3 rdf:type qb:Observation; 
+	 rdf:value 0.126;
+	 qb:dataSet :ds4;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :Education;
+	 qb:dimension :TP2020. 
+ 
+:ds4_10_1 rdf:type qb:Observation; 
+	 rdf:value 0.938;
+	 qb:dataSet :ds4;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :HumanHealthAndSocialWorkActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_10_2 rdf:type qb:Observation; 
+	 rdf:value 0.014;
+	 qb:dataSet :ds4;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :HumanHealthAndSocialWorkActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_10_3 rdf:type qb:Observation; 
+	 rdf:value 0.049;
+	 qb:dataSet :ds4;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :HumanHealthAndSocialWorkActivities;
+	 qb:dimension :TP2020. 
+ 
+:ds4_11_1 rdf:type qb:Observation; 
+	 rdf:value 0.205;
+	 qb:dataSet :ds4;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :ArtsEntertainmentAndRecreation;
+	 qb:dimension :TP2020. 
+ 
+:ds4_11_2 rdf:type qb:Observation; 
+	 rdf:value 0.0;
+	 qb:dataSet :ds4;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :ArtsEntertainmentAndRecreation;
+	 qb:dimension :TP2020. 
+ 
+:ds4_11_3 rdf:type qb:Observation; 
+	 rdf:value 0.795;
+	 qb:dataSet :ds4;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :ArtsEntertainmentAndRecreation;
+	 qb:dimension :TP2020. 
+ 
+:ds4_12_1 rdf:type qb:Observation; 
+	 rdf:value 0.767;
+	 qb:dataSet :ds4;
+	 qb:dimension :Continuingtotrade;
+	 qb:dimension :AllIndustries;
+	 qb:dimension :TP2020. 
+ 
+:ds4_12_2 rdf:type qb:Observation; 
+	 rdf:value 0.005;
+	 qb:dataSet :ds4;
+	 qb:dimension :Haspermanentlyceasedtrading;
+	 qb:dimension :AllIndustries;
+	 qb:dimension :TP2020. 
+ 
+:ds4_12_3 rdf:type qb:Observation; 
+	 rdf:value 0.228;
+	 qb:dataSet :ds4;
+	 qb:dimension :Hastemporarilyclosedortemporarilypausedtrading;
+	 qb:dimension :AllIndustries;
+	 qb:dimension :TP2020. 
+ 
