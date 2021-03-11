@@ -1,0 +1,23 @@
+PREFIX : <http://coursework_andreas.org/data/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX crime: <http://enakting.org/schema/crime/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX covid-industry: <http://coursework_andreas.org/schema/covid-industry/>
+
+#query for proportion of responses
+select distinct  ?dim1title ?dim2title ?value where { 
+	?Item a qb:Observation .
+	?Item qb:dataSet ?ds .
+	FILTER(?ds = :ds3)
+	?Item rdf:value ?value .
+	?Item qb:dimension ?dim .
+	?Item qb:dimension ?dim2 .
+    ?dim rdf:type ?typedim1.
+    ?dim2 rdf:type ?typedim2.
+    ?dim dc:title ?dim1title.
+    ?dim2 dc:title ?dim2title.
+	FILTER (?typedim1 = covid-industry:IndustryType && ?typedim2 = :WorkforceSize)
+    # !filter
+}
+ 
